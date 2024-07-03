@@ -1,3 +1,4 @@
+import './index.css';
 import { createApp, reactive } from "vue";
 import App from "./App.vue";
 
