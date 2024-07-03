@@ -1,0 +1,21 @@
+{
+  "name": "frontend",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build --base=/assets/athena_dev/frontend/ && yarn copy-html-entry",
+    "preview": "vite preview",
+    "copy-html-entry": "cp ../athena_dev/public/frontend/index.html ../athena_dev/www/frontend.html"
+  },
+  "dependencies": {
+    "socket.io-client": "^4.5.1",
+    "vue": "^3.4.29",
+    "vue-router": "^4"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^5.0.5",
+    "vite": "^5.3.1"
+  }
+}
