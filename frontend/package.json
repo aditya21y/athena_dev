@@ -1,8 +1,7 @@
 {
-  "name": "frontend",
+  "name": "frappe-ui-frontend",
   "private": true,
   "version": "0.0.0",
-  "type": "module",
   "scripts": {
     "dev": "vite",
     "build": "vite build --base=/assets/athena_dev/frontend/ && yarn copy-html-entry",
@@ -10,15 +9,16 @@
     "copy-html-entry": "cp ../athena_dev/public/frontend/index.html ../athena_dev/www/frontend.html"
   },
   "dependencies": {
-    "socket.io-client": "^4.5.1",
-    "vue": "^3.4.29",
-    "vue-router": "^4"
+    "feather-icons": "^4.28.0",
+    "frappe-ui": "^0.1.54",
+    "vue": "^3.2.25",
+    "vue-router": "^4.0.12"
   },
   "devDependencies": {
-    "@vitejs/plugin-vue": "^5.0.5",
-    "autoprefixer": "^10.4.19",
-    "postcss": "^8.4.39",
-    "tailwindcss": "^3.4.4",
-    "vite": "^5.3.1"
+    "@vitejs/plugin-vue": "^2.0.0",
+    "autoprefixer": "^10.4.2",
+    "postcss": "^8.4.5",
+    "tailwindcss": "^3.0.15",
+    "vite": "^2.7.2"
   }
 }
